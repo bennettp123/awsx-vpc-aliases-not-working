@@ -14,6 +14,12 @@ class Container extends pulumi.ComponentResource {
                     strategy: "None",
                 },
                 subnetSpecs: [{ type: "Isolated" }]
+            },
+            {
+                aliases: [{
+                    parent: pulumi.rootStackResource, // old parent
+                }],
+                parent: this, // new parent
             }
         );
     }
