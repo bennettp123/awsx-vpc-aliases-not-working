@@ -1,0 +1,3 @@
+name: awsx-vpc-aliases-not-working
+runtime: nodejs
+description: A minimal AWS TypeScript Pulumi program
